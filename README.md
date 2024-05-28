@@ -1,50 +1,54 @@
-API Django REST
+# API Django REST
+
 Este es un proyecto de API desarrollado utilizando Django y Django REST Framework. Proporciona una interfaz para interactuar con una base de datos a través de endpoints RESTful.
 
-Requisitos
-Python 3.x
-Django
-Django REST Framework
-Instalación
-Clona este repositorio en tu máquina local.
+## Requisitos
 
-Instala las dependencias del proyecto utilizando el siguiente comando:
+- Python 3.x
+- Django
+- Django REST Framework
 
-bash
-Copiar código
-pip install -r requirements.txt
-Ejecuta las migraciones de la base de datos:
+## Instalación
 
-bash
-Copiar código
-python manage.py migrate
-Inicia el servidor de desarrollo:
+1. Clona este repositorio en tu máquina local.
 
-bash
-Copiar código
-python manage.py runserver
-Uso
+2. Instala las dependencias del proyecto utilizando el siguiente comando:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Ejecuta las migraciones de la base de datos:
+
+    ```bash
+    python manage.py migrate
+    ```
+
+4. Inicia el servidor de desarrollo:
+
+    ```bash
+    python manage.py runserver
+    ```
+
+## Uso
+
 Puedes acceder a la API a través de los siguientes endpoints:
 
-Documentación con Redoc
-Documentación con Swagger
-Obtener token de autenticación
-Listar todos los roles
-Listar todos los usuarios
-Listar todos los productos
-Listar todas las ventas
-Listar todos los pedidos
-Listar todo el inventario
-Listar todos los chats
-Listar todos los mensajes
-Listar todas las notificaciones
+- **Documentación con Redoc**: [URL de Redoc]
+- **Documentación con Swagger**: [URL de Swagger]
+- **Obtener token de autenticación**: `/api/token/`
+- **Listar todos los roles**: `/api/roles/`
+- **Listar todos los usuarios**: `/api/users/`
+- **Listar todos los productos**: `/api/products/`
+- **Listar todas las ventas**: `/api/sales/`
+- **Listar todos los pedidos**: `/api/orders/`
+- **Listar todo el inventario**: `/api/inventory/`
+- **Listar todos los chats**: `/api/chats/`
+- **Listar todos los mensajes**: `/api/messages/`
+- **Listar todas las notificaciones**: `/api/notifications/`
+
 Puedes usar estas URL directamente en tu navegador o con herramientas como Postman para realizar peticiones HTTP.
 
-Contribución
-Si deseas contribuir a este proyecto, sigue estos pasos:
+## Licencia
 
-Realiza un fork del proyecto.
-Crea una nueva rama (git checkout -b feature/nueva-caracteristica).
-Realiza tus cambios y haz commit (git commit -am 'Agrega una nueva característica').
-Sube tus cambios a tu repositorio remoto (fork) (git push origin feature/nueva-caracteristica).
-Abre un Pull Request.
+Este proyecto está bajo la Licencia MIT. Puedes consultar el archivo `LICENSE.txt` para más detalles.
