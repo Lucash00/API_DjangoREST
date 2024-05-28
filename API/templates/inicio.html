@@ -1,0 +1,22 @@
+<!-- inicio.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="inicio contenido">
+    <!-- Contenido de bienvenida -->
+    <h1 class="titulo">API</h1>
+    <p>Esta es una plantilla de API enfocada en el proyecto de aprendizaje de Lucas Moreno Corral</p>
+
+    <div class="bandeja">
+
+        <div class="seccion">
+            <h2 class="encabezado">Documentación</h2>
+            <a class ="enlace" href="/redoc">Redoc</a>
+            <a class ="enlace" href="/swagger">Swagger</a>
+        </div>
+    </div>
+    
+</section>
+
+<script src="contenido.js"></script> <!-- Incluye el archivo externo de JavaScript -->
+{% endblock %}

@@ -1,0 +1,16 @@
+<!-- menu.html -->
+{% block menu %}
+<div class="menu">
+    <div class="logo"></div>
+    <ul>
+        <li><a href="{% url 'inicio' %}">Inicio</a></li>
+        <li class="dropdown">
+            <a>Documentación</a>
+            <ul class="dropdown-content">
+                <li><a href="/redoc">Redoc</a></li>
+                <li><a href="/swagger">Swagger</a></li>
+            </ul>
+        </li>
+    </ul>    
+</div>
+{% endblock %}

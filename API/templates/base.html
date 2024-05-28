@@ -1,0 +1,28 @@
+<!-- base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>API</title>
+    <!-- Enlaza el archivo CSS externo -->
+    <link rel="stylesheet" href="{% static 'estilo.css' %}">
+    <script src="{% static 'function.js' %}"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Agrega el menú -->
+    {% include 'menu.html' %}
+    
+    <!-- Agrega un espacio para el contenido -->
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <!-- Agrega el footer -->
+    {% include 'footer.html' %}
+</body>
+</html>
